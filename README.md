@@ -2,6 +2,8 @@
 
 ## What is Athena-signal?
 
+> 对能量VAD进行注释理解 by MaxMa
+
 Athena-signal is an open-source implementation of speech signal processing algorithms. 
 It aims to help reserchers and engineers who want to use speech signal processing algorithms in their own projects. 
 Athena-signal is mainly implemented using C, and called by python.
