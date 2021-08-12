@@ -17,11 +17,10 @@ limitations under the License.
 #ifndef _DIOS_SSP_VAD_ENERGY_H_
 #define _DIOS_SSP_VAD_ENERGY_H_
 
-enum TALK_STATE 
-{
-	doubletalk_state,
-	singletalk_state,
-	nearend_state
+enum TALK_STATE {
+  doubletalk_state,
+  singletalk_state,
+  nearend_state
 };
 
 /**********************************************************************************
@@ -32,7 +31,7 @@ Output:        // none
 Return:        // success: return energy vad module pointer
                   failure: return NULL
 **********************************************************************************/
-void* dios_ssp_energy_vad_init(int vad_type);
+void *dios_ssp_energy_vad_init(int vad_type);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_reset
@@ -42,7 +41,7 @@ Output:        // none
 Return:        // success: return energy vad module pointer
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_energy_vad_reset(void* vad_handle);
+void dios_ssp_energy_vad_reset(void *vad_handle);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_para_set
@@ -54,7 +53,7 @@ Output:        // none
 Return:        // success: return energy vad module pointer
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_energy_vad_para_set(void* vad_handle, enum TALK_STATE talk_state, int state);
+void dios_ssp_energy_vad_para_set(void *vad_handle, enum TALK_STATE talk_state, int state);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_process
@@ -65,7 +64,7 @@ Output:        // none
 Return:        // success: return energy vad flag
                   failure: return NULL
 **********************************************************************************/
-int dios_ssp_energy_vad_process(void* vad_handle, float *inbuf);
+int dios_ssp_energy_vad_process(void *vad_handle, float *inbuf);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_stric_result_get
@@ -75,7 +74,7 @@ Output:        // none
 Return:        // success: return stric energy vad result
                   failure: return NULL
 **********************************************************************************/
-int dios_ssp_energy_vad_stric_result_get(void* energyvad_ptr);
+int dios_ssp_energy_vad_stric_result_get(void *energyvad_ptr);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_para_get
@@ -89,7 +88,9 @@ Output:        // none
 Return:        // success: return NULL
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_energy_vad_para_get(void* energyvad_ptr, float *noisedev, float *noiselevel_second, float *noiselevel_first, float *vmean);
+void
+dios_ssp_energy_vad_para_get(void *energyvad_ptr, float *noisedev, float *noiselevel_second, float *noiselevel_first,
+                             float *vmean);
 
 /**********************************************************************************
 Function:      // dios_ssp_energy_vad_uninit
@@ -99,7 +100,7 @@ Output:        // none
 Return:        // success: return NULL
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_energy_vad_uninit(void* vad_handle);
+void dios_ssp_energy_vad_uninit(void *vad_handle);
 
 #endif
 

@@ -32,7 +32,7 @@ Output:        // none
 Return:        // success: return vad module pointer
                   failure: return NULL
 **********************************************************************************/
-void* dios_ssp_vad_init_api(void);
+void *dios_ssp_vad_init_api(void);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_reset_api
@@ -41,7 +41,7 @@ Input:         // ptr: vad module pointer
 Output:        // none
 Return:        // success: return 0, failure: return ERROR_VAD
 **********************************************************************************/
-int dios_ssp_vad_reset_api(void* ptr);
+int dios_ssp_vad_reset_api(void *ptr);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_process_api
@@ -52,7 +52,7 @@ Input:         // ptr: vad module pointer
 Output:        // none 
 Return:        // success: return 0, failure: return ERROR_VAD
 **********************************************************************************/
-int dios_ssp_vad_process_api(void* ptr, float* vad_data, int dt_st);
+int dios_ssp_vad_process_api(void *ptr, float *vad_data, int dt_st);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_uninit_api
@@ -61,7 +61,7 @@ Input:         // ptr: vad module pointer
 Output:        // none
 Return:        // success: return 0, failure: return ERROR_VAD
 **********************************************************************************/
-int dios_ssp_vad_uninit_api(void* ptr);
+int dios_ssp_vad_uninit_api(void *ptr);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_result_get
@@ -70,7 +70,7 @@ Input:         // ptr: vad module pointer
 Output:        // none
 Return:        // success: return vad result, failure: return ERROR_VAD
 **********************************************************************************/
-int dios_ssp_vad_result_get(void* ptr);
+int dios_ssp_vad_result_get(void *ptr);
 
 #endif  /* _DIOS_SSP_VAD_API_H_ */
 

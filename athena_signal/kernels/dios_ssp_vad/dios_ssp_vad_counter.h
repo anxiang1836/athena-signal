@@ -30,7 +30,7 @@ Output:        // none
 Return:        // success: return vad counter module pointer
                   failure: return NULL
 **********************************************************************************/
-void* dios_ssp_vad_counter_init(void);
+void *dios_ssp_vad_counter_init(void);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_counter_reset
@@ -39,7 +39,7 @@ Input:         // ptr: vad_counter_handle
 Output:        // none
 Return:        // success: return 0, failure: return -1
 **********************************************************************************/
-int dios_ssp_vad_counter_reset(void* vad_counter_handle);
+int dios_ssp_vad_counter_reset(void *vad_counter_handle);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_mix_process
@@ -54,7 +54,8 @@ Output:        // none
 Return:        // success: return 0
                   failure: return NULL
 **********************************************************************************/
-int dios_ssp_vad_mix_process(int apm_flag, int dt_flag, void* vad_counter_handle, float signaldev, int* vad_flag, int state);
+int dios_ssp_vad_mix_process(int apm_flag, int dt_flag, void *vad_counter_handle, float signaldev, int *vad_flag,
+                             int state);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_mix_stric_process
@@ -69,7 +70,8 @@ Output:        // none
 Return:        // success: return 0
                   failure: return NULL
 **********************************************************************************/
-int dios_ssp_vad_mix_stric_process(int apm_flag, int dt_flag, void* vad_counter_handle, float signaldev, int* vad_flag, int state);
+int dios_ssp_vad_mix_stric_process(int apm_flag, int dt_flag, void *vad_counter_handle, float signaldev, int *vad_flag,
+                                   int state);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_smooth
@@ -81,7 +83,7 @@ Output:        // none
 Return:        // success: return NULL
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_vad_smooth(int* vad_flag, void* vad_counter_handle, int* vad_state);
+void dios_ssp_vad_smooth(int *vad_flag, void *vad_counter_handle, int *vad_state);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_para_get_debug
@@ -93,7 +95,7 @@ Output:        // none
 Return:        // success: return NULL
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_vad_para_get_debug(void* vad_counter_handle, float *vad_cnt, float *false_cnt);
+void dios_ssp_vad_para_get_debug(void *vad_counter_handle, float *vad_cnt, float *false_cnt);
 
 /**********************************************************************************
 Function:      // dios_ssp_vad_counter_uinit
@@ -103,7 +105,7 @@ Output:        // none
 Return:        // success: return NULL
                   failure: return NULL
 **********************************************************************************/
-void dios_ssp_vad_counter_uinit(void* vad_counter_handle);
+void dios_ssp_vad_counter_uinit(void *vad_counter_handle);
 
 #endif
 

@@ -19,6 +19,6 @@ limitations under the License.
 
 #define VAD_FFT_LEN                       (256)
 #define VAD_SUBBAND_NUM                   (VAD_FFT_LEN/2+1)
-	
+
 #endif /* _DIOS_SSP_VAD_MACROS_H_ */
 
